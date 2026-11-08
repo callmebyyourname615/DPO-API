@@ -1,0 +1,840 @@
+{
+  "institutional.duties.photo-1": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2024/06/DPO-MEMBER.jpg",
+    "alt": "ຮູບໝູ່ ສຳນັກງານປົກປ້ອງເງິນຝາກ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/cf0acc4a7b965794.jpg",
+    "bytes": 1484209
+  },
+  "institutional.history.photo-1": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/02/01.jpg",
+    "alt": "ອາຄານສຳນັກງານເກົ່າ ສປງ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/8a4341eb1167e0fa.jpg",
+    "bytes": 254061
+  },
+  "institutional.history.photo-2": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/11/ຮູບ-ສປງ-2020.gif",
+    "alt": "ອາຄານສຳນັກງານປັດຈຸບັນ ສປງ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/5163fdc8856866d6.gif",
+    "bytes": 1358822
+  },
+  "article.dporaw.photo-1": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/ປະທານສະພາ-ຂຶ້ນຊີ້ແຈງກົດໝາຍ-ສປງ.jpg",
+    "alt": " ຂຶ້ນຊີ້ແຈງກົດໝາຍ ສປງ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/f1e56061b5ecc3c4.jpg",
+    "bytes": 346189
+  },
+  "article.dporaw.photo-2": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/ປະທານສະພາ-ຂຶ້ນຊີ້ແຈງກົດໝາຍ-ສປງ-3.jpg",
+    "alt": "article.dporaw",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/ef270b0c3e0e126d.jpg",
+    "bytes": 232333
+  },
+  "article.dporaw.photo-3": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/ປ້າຍລົງຄະແນນ.jpg",
+    "alt": "article.dporaw",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/da4158f3480d63ac.jpg",
+    "bytes": 203421
+  },
+  "article.dporaw.photo-4": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/ປະທານສະພາ-ຂຶ້ນຊີ້ແຈງກົດໝາຍ-ສປງ-2.jpg",
+    "alt": "article.dporaw",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/a1cbb33be6201a94.jpg",
+    "bytes": 314527
+  },
+  "article.dporaw.photo-5": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/ປະທານສະພາ-ຂຶ້ນຊີ້ແຈງກົດໝາຍ-ສປງ-ລວມ.jpg",
+    "alt": "article.dporaw",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/91065558c8b4bfe9.jpg",
+    "bytes": 317776
+  },
+  "organization.board.panel-1.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/06/ສະພາ-1999-2003-1024x351.png",
+    "alt": "board organization chart 1",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/b83be86d72f64e5a.png",
+    "bytes": 301705
+  },
+  "organization.board.panel-2.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/06/ສະພາ-2003-2006-1-1024x354.png",
+    "alt": "board organization chart 2",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/2171bfebc9c19330.png",
+    "bytes": 232703
+  },
+  "organization.board.panel-3.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/03/ສະພາ-2006-2009-1024x354.png",
+    "alt": "board organization chart 3",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/4889cb80a4cafaf1.png",
+    "bytes": 243954
+  },
+  "organization.board.panel-4.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/06/ສະພາ-2009-2015-1024x354.png",
+    "alt": "board organization chart 4",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/52f2c7fca29fdf02.png",
+    "bytes": 246573
+  },
+  "organization.board.panel-5.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/06/ສະພາ-2015-2017-1024x354.png",
+    "alt": "board organization chart 5",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/53bf9b89a3c7d1a7.png",
+    "bytes": 244074
+  },
+  "organization.board.panel-6.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/06/ສະພາ-2017-2018-1-1024x378.png",
+    "alt": "board organization chart 6",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/9347a9eb972fdbb8.png",
+    "bytes": 224201
+  },
+  "organization.board.panel-7.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/06/ສະພາ-2019-1024x474.png",
+    "alt": "board organization chart 7",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/91d9381d7c9ade25.png",
+    "bytes": 312692
+  },
+  "organization.board.panel-8.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/03/ສະພາບໍລິຫານ-2020-1024x448.jpg",
+    "alt": "board organization chart 8",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/57d987619b11fa5e.jpg",
+    "bytes": 63834
+  },
+  "organization.board.panel-9.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2024/01/ສະພາບໍລິຫານ-2022.jpg",
+    "alt": "board organization chart 9",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/d7f6440f9b5bfbce.jpg",
+    "bytes": 481817
+  },
+  "organization.board.panel-10.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2024/05/ສະພາບໍລິຫານ-2023.jpg",
+    "alt": "board organization chart 10",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/c6d9ecc622473379.jpg",
+    "bytes": 575188
+  },
+  "organization.board.panel-11.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2024/11/ສະພາບໍລິຫານ-2024-1-scaled.jpg",
+    "alt": "board organization chart 11",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/b8a42f4a49b89007.jpg",
+    "bytes": 182503
+  },
+  "organization.board.panel-12.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/10/ສະພາບໍລິຫານ-2025-01.jpg",
+    "alt": "board organization chart 12",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/5966983911e516e4.jpg",
+    "bytes": 313963
+  },
+  "organization.board.panel-13.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/10/ສະພາບໍລິຫານ-2025-02.jpg",
+    "alt": "board organization chart 13",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/f7f5a7dbe22707ac.jpg",
+    "bytes": 316980
+  },
+  "organization.board.panel-14.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/05/ສະພາບໍລິຫານ-ເກົ່າ.jpg",
+    "alt": "board organization chart 14",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/90f72a7310c22b91.jpg",
+    "bytes": 336772
+  },
+  "organization.board.panel-15.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/05/ສະພາບໍລິຫານ-ສປງ-ປັດຈຸບັນ.jpg",
+    "alt": "board organization chart 15",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/60e8f84d265e3fec.jpg",
+    "bytes": 326315
+  },
+  "organization.board.panel-16.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/08/ສະພາບໍລິຫານ-ສປງ-ເດືອນ-07-ປັດຈຸບັນ.jpg.jpeg",
+    "alt": "board organization chart 16",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/0f296b6ce54c2d21.jpeg",
+    "bytes": 323806
+  },
+  "organization.party.panel-1.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/05/ຄະນະໜ່ວຍພັກ-ສປງ-2026-3.jpg",
+    "alt": "ໂຄງຮ່າງການຈັດຕັ້ງ ໜ່ວຍພັກ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/61ce88db4139c8e1.jpg",
+    "bytes": 236507
+  },
+  "organization.party.panel-2.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/03/ກຳມະບານ.jpg",
+    "alt": "ໂຄງຮ່າງການຈັດຕັ້ງ ໜ່ວຍກໍາມະບານ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/42bcbf8d17ca3e5e.jpg",
+    "bytes": 156778
+  },
+  "organization.party.panel-3.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/03/ມຍ-2020-814x1024.jpg",
+    "alt": "ໂຄງຮ່າງການຈັດຕັ້ງ ໜ່ວຍແມ່ຍິງ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/6ab7eb9d75b3e257.jpg",
+    "bytes": 81050
+  },
+  "organization.party.panel-4.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/03/ຊາວໜຸ່ມ.jpg",
+    "alt": "ໂຄງຮ່າງການຈັດຕັ້ງ ຄະນະບໍລິຫານງານຊາວໜຸ່ມ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/b45338e5d9a19cf1.jpg",
+    "bytes": 216652
+  },
+  "shared.brand-logo": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/03/DPO-LOGO.png",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນຝາກ · Deposit Protection Office",
+    "fit": "contain",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/22844fe243f16f4e.png",
+    "bytes": 34928
+  },
+  "shared.flag-la": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/03/lo.png",
+    "alt": "ພາສາລາວ",
+    "fit": "contain",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/2645823a0e1ba640.png",
+    "bytes": 318
+  },
+  "shared.flag-en": {
+    "source": "https://www.dpo.gov.la/wp-content/plugins/translatepress-multilingual/assets/images/flags/en_US.png",
+    "alt": "English",
+    "fit": "contain",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/d5c7675bf1b02712.png",
+    "bytes": 502
+  },
+  "home.office-photo": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/11/ຮູບ-ສປງ-2020.gif",
+    "alt": "ຮູບ ສປງ 2020",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/5163fdc8856866d6.gif",
+    "bytes": 1358822
+  },
+  "home.protection-poster": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2024/01/ໂພສະເຕີ-ເອ-5-ໃໝ່.jpg-2.jpg",
+    "alt": "ໂພສະເຕີ ເອ 5 ໃໝ່ jpg 2",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/f8bd2c88c7595bb2.jpg",
+    "bytes": 1772927
+  },
+  "home.member-logo-montage": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/04/Membership-logos-2026.jpg",
+    "alt": "Membership logos 2026",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/34d2ab224672122f.jpg",
+    "bytes": 381328
+  },
+  "home.hero-1": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/4.-logo-27y-dpo-ເວບໄຊຮ-1.jpg",
+    "alt": "DPO banner 1",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/ca6bcdd6c49f9817.jpg",
+    "bytes": 158827
+  },
+  "home.hero-2": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/0N7A0597.jpg",
+    "alt": "DPO banner 2",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/04235eef9e427a3f.jpg",
+    "bytes": 475779
+  },
+  "home.hero-3": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/Group-photo_NBCDPO.jpg",
+    "alt": "DPO banner 3",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/676f78be3befc7ba.jpg",
+    "bytes": 466049
+  },
+  "home.hero-4": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/IMG_1976.jpg",
+    "alt": "DPO banner 4",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/9bc0f8990c2ff6ac.jpg",
+    "bytes": 384205
+  },
+  "home.hero-5": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/IMG_2634.JPG.jpeg",
+    "alt": "DPO banner 5",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/c1f0920f1a1082fd.jpeg",
+    "bytes": 542047
+  },
+  "footer.map": {
+    "kind": "map",
+    "src": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18520.342732143163!2d102.6287159!3d17.9786862!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6173e0e073a1c83a!2sDeposit%20Protection%20Office%20Lao%20PDR!5e1!3m2!1sen!2sla!4v1631072926455!5m2!1sen!2sla",
+    "alt": "Deposit Protection Office · Vientiane"
+  },
+  "contact.map": {
+    "kind": "map",
+    "src": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18520.342732143163!2d102.6287159!3d17.9786862!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6173e0e073a1c83a!2sDeposit%20Protection%20Office%20Lao%20PDR!5e1!3m2!1sen!2sla!4v1631072926455!5m2!1sen!2sla",
+    "alt": "Deposit Protection Office · Vientiane"
+  },
+  "protection.background": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/03/background-Poster.jpg",
+    "alt": "",
+    "fit": "contain",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/185445ffb9a0a7eb.jpg",
+    "bytes": 1304653
+  },
+  "footer.audio-1": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2024/02/ສະປອດໂຄສະນາ-ປົກປ້ອງເງີນຝາກ.mp3",
+    "alt": "DPO radio spot 1",
+    "fit": "contain",
+    "natural": false,
+    "kind": "audio",
+    "src": "/assets/dpo/5787c08653d7ae38.mp3",
+    "bytes": 3369836
+  },
+  "footer.audio-2": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/11/Radio-Spot_Normal_Song.mp3",
+    "alt": "DPO radio spot 2",
+    "fit": "contain",
+    "natural": false,
+    "kind": "audio",
+    "src": "/assets/dpo/f41a8cfd55e556f9.mp3",
+    "bytes": 4264494
+  },
+  "contact.map-qr": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2021/09/DPO-Map-QR.png",
+    "alt": "QR code for DPO location",
+    "fit": "contain",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/28159e14e864926f.png",
+    "bytes": 249
+  },
+  "home.news-1": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/ປະທານສະພາ-ຂຶ້ນຊີ້ແຈງກົດໝາຍ-ສປງ-300x300.jpg",
+    "alt": "ຄະນະຮັບຜິດຊອບຄົ້ນຄວ້າສ້າງກົດໝາຍວ່າດ້ວຍການປົກປ້ອງເງິນຝາກລາຍງານການຄົ້ນຄວ້າຄຳເຫັນຕໍ່ຮ່າງກົດໝາຍ ຕໍ່ກອງປະຊຸມສະພາແຫ່ງຊາດ",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/203d2e26467aee3e.jpg",
+    "bytes": 20625
+  },
+  "news.archive-1.thumbnail": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/ປະທານສະພາ-ຂຶ້ນຊີ້ແຈງກົດໝາຍ-ສປງ-300x300.jpg",
+    "alt": "ຄະນະຮັບຜິດຊອບຄົ້ນຄວ້າສ້າງກົດໝາຍວ່າດ້ວຍການປົກປ້ອງເງິນຝາກລາຍງານການຄົ້ນຄວ້າຄຳເຫັນຕໍ່ຮ່າງກົດໝາຍ ຕໍ່ກອງປະຊຸມສະພາແຫ່ງຊາດ",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/203d2e26467aee3e.jpg",
+    "bytes": 20625
+  },
+  "sidebar.news-1": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/ປະທານສະພາ-ຂຶ້ນຊີ້ແຈງກົດໝາຍ-ສປງ-300x300.jpg",
+    "alt": "ຄະນະຮັບຜິດຊອບຄົ້ນຄວ້າສ້າງກົດໝາຍວ່າດ້ວຍການປົກປ້ອງເງິນຝາກລາຍງານການຄົ້ນຄວ້າຄຳເຫັນຕໍ່ຮ່າງກົດໝາຍ ຕໍ່ກອງປະຊຸມສະພາແຫ່ງຊາດ",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/203d2e26467aee3e.jpg",
+    "bytes": 20625
+  },
+  "home.news-2": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/ປະທານຮ່ວມ-300x300.jpg",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນ(ສປງ)ຝາກຮ່ວມກັບ ປະກັນໄພເງິນຝາກ ສສ ຫວຽດນາມ(DIV) ຈັດກອງປະຊຸມແລກປ່ຽນບົດຮຽນ ແລະ ທົບທວນວຽກງານວິຊາສະເພາະດ້ານການປົກປ້ອງເງິນຝາກ.",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/93e1a676ad254572.jpg",
+    "bytes": 23799
+  },
+  "news.archive-2.thumbnail": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/ປະທານຮ່ວມ-300x300.jpg",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນ(ສປງ)ຝາກຮ່ວມກັບ ປະກັນໄພເງິນຝາກ ສສ ຫວຽດນາມ(DIV) ຈັດກອງປະຊຸມແລກປ່ຽນບົດຮຽນ ແລະ ທົບທວນວຽກງານວິຊາສະເພາະດ້ານການປົກປ້ອງເງິນຝາກ.",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/93e1a676ad254572.jpg",
+    "bytes": 23799
+  },
+  "sidebar.news-2": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/ປະທານຮ່ວມ-300x300.jpg",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນ(ສປງ)ຝາກຮ່ວມກັບ ປະກັນໄພເງິນຝາກ ສສ ຫວຽດນາມ(DIV) ຈັດກອງປະຊຸມແລກປ່ຽນບົດຮຽນ ແລະ ທົບທວນວຽກງານວິຊາສະເພາະດ້ານການປົກປ້ອງເງິນຝາກ.",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/93e1a676ad254572.jpg",
+    "bytes": 23799
+  },
+  "article.dpoxdiv.photo-1": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/ປະທານຮ່ວມ-600x380.jpg",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນ(ສປງ)ຝາກຮ່ວມກັບ ປະກັນໄພເງິນຝາກ ສສ ຫວຽດນາມ(DIV) ຈັດກອງປະຊຸມແລກປ່ຽນບົດຮຽນ ແລະ ທົບທວນວຽກງານວິຊາສະເພາະດ້ານການປົກປ້ອງເງິນຝາກ.",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/740a38940844308d.jpg",
+    "bytes": 53199
+  },
+  "home.news-3": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/1.-ຮູບປະທານກອງປະຊຸມ-300x300.jpg",
+    "alt": "ສຳນັກງານປົກປອງເງິນຝາກ (ສປງ) ສະເຫຼີມສະຫຼອງເນື່ອງໃນໂອກາດວັນສ້າງຕັ້ງ ສປງ ຄົບຮອບ 27 ປີ(23 ກັນຍາ 1999 – 23 ກັນຍາ 2026)",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/46e83d6f5e1d487f.jpg",
+    "bytes": 26400
+  },
+  "news.archive-3.thumbnail": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/1.-ຮູບປະທານກອງປະຊຸມ-300x300.jpg",
+    "alt": "ສຳນັກງານປົກປອງເງິນຝາກ (ສປງ) ສະເຫຼີມສະຫຼອງເນື່ອງໃນໂອກາດວັນສ້າງຕັ້ງ ສປງ ຄົບຮອບ 27 ປີ(23 ກັນຍາ 1999 – 23 ກັນຍາ 2026)",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/46e83d6f5e1d487f.jpg",
+    "bytes": 26400
+  },
+  "sidebar.news-3": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/1.-ຮູບປະທານກອງປະຊຸມ-300x300.jpg",
+    "alt": "ສຳນັກງານປົກປອງເງິນຝາກ (ສປງ) ສະເຫຼີມສະຫຼອງເນື່ອງໃນໂອກາດວັນສ້າງຕັ້ງ ສປງ ຄົບຮອບ 27 ປີ(23 ກັນຍາ 1999 – 23 ກັນຍາ 2026)",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/46e83d6f5e1d487f.jpg",
+    "bytes": 26400
+  },
+  "article.anv27year.photo-1": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/1.-ຮູບປະທານກອງປະຊຸມ-600x380.jpg",
+    "alt": "ສຳນັກງານປົກປອງເງິນຝາກ (ສປງ) ສະເຫຼີມສະຫຼອງເນື່ອງໃນໂອກາດວັນສ້າງຕັ້ງ ສປງ ຄົບຮອບ 27 ປີ(23 ກັນຍາ 1999 – 23 ກັນຍາ 2026)",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/b6b5b58cbf922e9e.jpg",
+    "bytes": 57289
+  },
+  "home.news-4": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/pic-GTP-in-KDIC-01-300x300.jpg",
+    "alt": "ສໍານັກງານປົກປ້ອງເງິນຝາກ ເຂົ້າຮ່ວມຝຶກອົບຮົມ KDIC Global Training Program ປະຈໍາປີ 2026",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/5855b648bb0d0fa2.jpg",
+    "bytes": 25149
+  },
+  "news.archive-4.thumbnail": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/pic-GTP-in-KDIC-01-300x300.jpg",
+    "alt": "ສໍານັກງານປົກປ້ອງເງິນຝາກ ເຂົ້າຮ່ວມຝຶກອົບຮົມ KDIC Global Training Program ປະຈໍາປີ 2026",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/5855b648bb0d0fa2.jpg",
+    "bytes": 25149
+  },
+  "sidebar.news-4": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/pic-GTP-in-KDIC-01-300x300.jpg",
+    "alt": "ສໍານັກງານປົກປ້ອງເງິນຝາກ ເຂົ້າຮ່ວມຝຶກອົບຮົມ KDIC Global Training Program ປະຈໍາປີ 2026",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/5855b648bb0d0fa2.jpg",
+    "bytes": 25149
+  },
+  "article.kdicglobaltrainingprogram.photo-1": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/10/pic-GTP-in-KDIC-01-600x380.jpg",
+    "alt": "ສໍານັກງານປົກປ້ອງເງິນຝາກ ເຂົ້າຮ່ວມຝຶກອົບຮົມ KDIC Global Training Program ປະຈໍາປີ 2026",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/f068560adf5c67c6.jpg",
+    "bytes": 53979
+  },
+  "home.news-5": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/ທ່ານ-ຮອງຜູ້ວ່າປະກອບຄຳຄິດເຫັນ-1-300x300.jpg",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນຝາກ(ສປງ) ເຂົ້າຮ່ວມງານ”ເທດສະການຄຳລາວ2026″(Lao Gold Festival 2026)",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/9ca4f9f31236dde1.jpg",
+    "bytes": 24637
+  },
+  "news.archive-5.thumbnail": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/ທ່ານ-ຮອງຜູ້ວ່າປະກອບຄຳຄິດເຫັນ-1-300x300.jpg",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນຝາກ(ສປງ) ເຂົ້າຮ່ວມງານ”ເທດສະການຄຳລາວ2026″(Lao Gold Festival 2026)",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/9ca4f9f31236dde1.jpg",
+    "bytes": 24637
+  },
+  "sidebar.news-5": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/ທ່ານ-ຮອງຜູ້ວ່າປະກອບຄຳຄິດເຫັນ-1-300x300.jpg",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນຝາກ(ສປງ) ເຂົ້າຮ່ວມງານ”ເທດສະການຄຳລາວ2026″(Lao Gold Festival 2026)",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/9ca4f9f31236dde1.jpg",
+    "bytes": 24637
+  },
+  "article.laogoldfestival2026.photo-1": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/ທ່ານ-ຮອງຜູ້ວ່າປະກອບຄຳຄິດເຫັນ-1-600x380.jpg",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນຝາກ(ສປງ) ເຂົ້າຮ່ວມງານ”ເທດສະການຄຳລາວ2026″(Lao Gold Festival 2026)",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/6a2fa10f668bf68a.jpg",
+    "bytes": 56508
+  },
+  "home.news-6": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/ປະທານ-ກຊ-300x300.jpg",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນຝາກ (ສປງ) ເປີດກອງປະຊຸມກວດກາເນື້ອໃນຮອບດ້ານຮ່າງກົດໝາຍວ່າດ້ວຍການປົກປ້ອງເງິນຝາກ",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/af381c2d3716db26.jpg",
+    "bytes": 20914
+  },
+  "news.archive-6.thumbnail": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/ປະທານ-ກຊ-300x300.jpg",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນຝາກ (ສປງ) ເປີດກອງປະຊຸມກວດກາເນື້ອໃນຮອບດ້ານຮ່າງກົດໝາຍວ່າດ້ວຍການປົກປ້ອງເງິນຝາກ",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/af381c2d3716db26.jpg",
+    "bytes": 20914
+  },
+  "sidebar.news-6": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/ປະທານ-ກຊ-300x300.jpg",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນຝາກ (ສປງ) ເປີດກອງປະຊຸມກວດກາເນື້ອໃນຮອບດ້ານຮ່າງກົດໝາຍວ່າດ້ວຍການປົກປ້ອງເງິນຝາກ",
+    "fit": "cover",
+    "natural": false,
+    "kind": "image",
+    "src": "/assets/dpo/af381c2d3716db26.jpg",
+    "bytes": 20914
+  },
+  "article.dponewlaw.photo-1": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/ປະທານ-ກຊ-300x300.jpg",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນຝາກ (ສປງ) ເປີດກອງປະຊຸມກວດກາເນື້ອໃນຮອບດ້ານຮ່າງກົດໝາຍວ່າດ້ວຍການປົກປ້ອງເງິນຝາກ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/af381c2d3716db26.jpg",
+    "bytes": 20914
+  },
+  "sidebar.partner-1": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/03/DIV-1-1024x171.png",
+    "alt": "Deposit protection partner",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/1cd0fcb19f51dcd7.png",
+    "bytes": 88150
+  },
+  "sidebar.partner-2": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/03/Indo-1-1024x171.png",
+    "alt": "Deposit protection partner",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/04051746ffdfead9.png",
+    "bytes": 72340
+  },
+  "sidebar.partner-3": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/03/DICJ-1-1024x201.png",
+    "alt": "Deposit protection partner",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/9a1e1d1ec7391a83.png",
+    "bytes": 88184
+  },
+  "sidebar.partner-4": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/03/KDIC-1-1024x171.png",
+    "alt": "Deposit protection partner",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/4acc92ecd53fcb14.png",
+    "bytes": 59094
+  },
+  "sidebar.partner-5": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/03/DPA-1-1024x200.jpg",
+    "alt": "Deposit protection partner",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/a96558f5e0833d22.jpg",
+    "bytes": 41063
+  },
+  "organization.state.overview": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/05/ໂຄງຮ່າງການຈັດຕັ້ງ-1-4.jpg",
+    "alt": "ໂຄງຮ່າງການຈັດຕັ້ງ ສາຍລັດ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/579e8a170dc578bf.jpg",
+    "bytes": 202402
+  },
+  "organization.state.panel-1.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/04/1-2.jpg",
+    "alt": "ພະແນກບໍລິຫານ-ຈັດຕັ້ງ (Personnel and Operation Division)",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/fcb218a2d7b33c4c.jpg",
+    "bytes": 708283
+  },
+  "organization.state.panel-1.chart-2": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/10/2.jpg",
+    "alt": "ພະແນກບໍລິຫານ-ຈັດຕັ້ງ (Personnel and Operation Division)",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/816d610e03489f95.jpg",
+    "bytes": 650265
+  },
+  "organization.state.panel-1.chart-3": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/10/3.jpg",
+    "alt": "ພະແນກບໍລິຫານ-ຈັດຕັ້ງ (Personnel and Operation Division)",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/e745c8b8f21c9dde.jpg",
+    "bytes": 330362
+  },
+  "organization.state.panel-2.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/10/1.jpg",
+    "alt": "ພະແນກບັນຊີ ແລະ ບໍລິຫານທຶນ (Accounting and Fund Management Division)",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/2ab84a905d765ef8.jpg",
+    "bytes": 662176
+  },
+  "organization.state.panel-2.chart-2": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/10/2-1.jpg",
+    "alt": "ພະແນກບັນຊີ ແລະ ບໍລິຫານທຶນ (Accounting and Fund Management Division)",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/8bc3bccff3334e22.jpg",
+    "bytes": 106318
+  },
+  "organization.state.panel-3.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/04/1.jpg",
+    "alt": "ພະແນກວິເຄາະ ແລະ ຄຸ້ມຄອງການຈ່າຍເງິນປົກປ້ອງ (Analysis and Payout Supervision Division)",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/088e692c493dc364.jpg",
+    "bytes": 695348
+  },
+  "organization.state.panel-3.chart-2": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/10/ພະແນກວິເຄາະ.jpg",
+    "alt": "ພະແນກວິເຄາະ ແລະ ຄຸ້ມຄອງການຈ່າຍເງິນປົກປ້ອງ (Analysis and Payout Supervision Division)",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/f49bb8813680c166.jpg",
+    "bytes": 618520
+  },
+  "organization.state.panel-4.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/10/ພະແນກກວດກາພາຍໃນ.jpg",
+    "alt": "ພະແນກກວດກາພາຍໃນ (Internal Audit Division)",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/c5bdbc275099f83b.jpg",
+    "bytes": 657489
+  },
+  "organization.state.panel-5.chart": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/04/FSNP.jpg",
+    "alt": "ໂຄງການ FSNP",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/95dd68c5903eb77b.jpg",
+    "bytes": 393266
+  },
+  "connections.partner-1.logo": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/na-banner.jpg",
+    "alt": "ສະພາແຫ່ງຊາດ ແຫ່ງ ສປປ ລາວ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/5add3b79396c915a.jpg",
+    "bytes": 70469
+  },
+  "connections.partner-2.logo": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/bol.jpg",
+    "alt": "ທະນາຄານແຫ່ງ ສປປ ລາວ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/83b46d8de9e98001.jpg",
+    "bytes": 65025
+  },
+  "connections.partner-3.logo": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/05/World-Bank.jpg",
+    "alt": "The World Bank",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/53ed6f5f0e3895fb.jpg",
+    "bytes": 53289
+  },
+  "connections.partner-4.logo": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2026/09/mof.png",
+    "alt": "ກະຊວງການເງິນ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/bc27f07013d65187.png",
+    "bytes": 53795
+  },
+  "connections.partner-5.logo": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2020/05/IADI.jpg",
+    "alt": "International Association of Deposit Insurers",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/ea2d85c009ede389.jpg",
+    "bytes": 53133
+  },
+  "bilateral.article-1.photo": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-26-at-08.35.25-600x380.jpeg",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນຝາກ ເຂົ້າຮ່ວມກອງປະຊຸມສາກົນ ຢູ່ປະເທດກາຊັກສະຖານ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/5cff5231bd6e3334.jpeg",
+    "bytes": 66498
+  },
+  "bilateral.article-2.photo": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/05/ບົດຂ່າວ-ພິທີເຊັນ-MOU_DPOKDIC-TM-1-scaled-600x380.jpg",
+    "alt": "ສປປ ລາວ ແລະ ສ.ເກົາຫຼີ ສືບຕໍ່ສາຍພົວພັນ-ຮ່ວມມືໃນວຽກງານປົກປ້ອງເງິນຝາກ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/09ac501e6244228f.jpg",
+    "bytes": 53615
+  },
+  "bilateral.article-3.photo": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2025/03/ບົດຂ່າວ-ພິທີເຊັ້ນ-MOU-1-1-scaled-600x380.jpg",
+    "alt": "ພິທີເຊັນ ບົດບັນທຶກຄວາມເຂົ້າໃຈ (MOU) ສະບັບປັບປຸງ ລະຫວ່າງ ກຄທ, ກຄສບ ແລະ ສປງ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/029a0345ebfc7891.jpg",
+    "bytes": 44320
+  },
+  "bilateral.article-4.photo": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2024/12/ຂ່າວ-ກອງປະຊຸມ-ຊຸກຍູ້ໂຄງການ-Support-Mission-1-600x380.jpg",
+    "alt": "ສປງ ແລະ ທະນາຄານໂລກ ຈັດກອງປະຊຸມຮ່ວມເພື່ອຊຸກຍູ້ການຈັດຕັ້ງປະຕິບັດ ໂຄງການສ້າງຄວາມເຂັ້ມແຂງໃນຕາໜ່າງຄວາມປອດໄພຂອງຂະແໜງການເງິນຂອງ ສປປ ລາວ ປະຈຳປີ 2024",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/d9a92b3430850954.jpg",
+    "bytes": 45815
+  },
+  "bilateral.article-5.photo": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2024/11/ບົດຂ່າວ-ກອງປະຊຸມສາກົນ-ພະຈິກ-2024-1-scaled-600x380.jpg",
+    "alt": "ສປງ ຈັດກອງປະຊຸມສຳມະນາສາກົນ ຮ່ວມກັບບັນດາປະເທດຄູ່ຮ່ວມມືໃນຫົວຂໍ້: “ພາບລວມຂອງອົງການປົກປ້ອງເງິນຝາກ ແລະ ສິ່ງທ້າທາຍໃນການຈັດຕັ້ງປະຕິບັດວຽກງານປົກປ້ອງເງິນຝາກ”",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/fca5648d4956c227.jpg",
+    "bytes": 51541
+  },
+  "organization.state.poster": {
+    "source": "https://www.dpo.gov.la/wp-content/uploads/2024/08/DPO-663x1024.jpg",
+    "alt": "ສຳນັກງານປົກປ້ອງເງິນຝາກ",
+    "fit": "contain",
+    "natural": true,
+    "kind": "image",
+    "src": "/assets/dpo/state-poster.jpg",
+    "bytes": 133040
+  }
+}

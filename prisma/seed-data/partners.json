@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "url": "https://na.gov.la/",
+    "text": [
+      "ສະພາແຫ່ງຊາດ ແຫ່ງ ສປປ ລາວ",
+      "ທີ່ຢູ່:ບ້ານທາດຫຼວງເໜືອ, ເມືອງ ໄຊເສດຖາ, ນະຄອນຫຼວງວຽງຈັນ",
+      "ເບີໂທສາຍດ່ວນ:156"
+    ]
+  },
+  {
+    "id": 2,
+    "url": "http://www.bol.gov.la/",
+    "text": [
+      "ທະນາຄານແຫ່ງ ສປປ ລາວ",
+      "ທີ່ຢູ່:ຖະໜົນຢອນເນ, ນະຄອນຫຼວງວຽງຈັນ ຕູ້ໄປສະນີ 19,",
+      "ໂທລະພິມ: 4304 BNL.VTE.LS",
+      "ໂທລະສັບ:021-213109, 021-213110"
+    ]
+  },
+  {
+    "id": 3,
+    "url": "https://www.worldbank.org/en/country/lao",
+    "text": [
+      "The World Bank",
+      "Address:Xieng Ngeun Village, Chao Fa Ngum Road Vientiane",
+      "Tel:(856-21) 266200",
+      "Email:laos@worldbank.org"
+    ]
+  },
+  {
+    "id": 4,
+    "url": "https://www.mof.gov.la/",
+    "text": [
+      "ກະຊວງການເງິນ",
+      "ທີ່ຢູ່:ຫ້ອງການກະຊວງການເງິນ ຖະໜົນ 23 ສິງຫາ ນະຄອນຫຼວງວຽງຈັນ ສ.ປ.ປ.ລາວ",
+      "ໂທ:(856-21) 911336, (856-21) 417766",
+      "ສາຍດ່ວນ:1519"
+    ]
+  },
+  {
+    "id": 5,
+    "url": "https://www.iadi.org/en/",
+    "text": [
+      "International Association of Deposit Insurers",
+      "c/o Bank of International Settlements",
+      "Centralbahnplatz 2",
+      "CH – 4002 Basel",
+      "Switzerland"
+    ]
+  }
+]
