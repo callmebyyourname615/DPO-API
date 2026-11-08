@@ -1,3 +1,5 @@
+import { ChatController } from './chat/chat.controller';
+import { ChatService } from './chat/chat.service';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { JwtModule } from '@nestjs/jwt';
@@ -14,7 +16,7 @@ import { MediaService } from './media/media.service';
 import { UsersController } from './users/users.controller';
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true }), JwtModule.registerAsync({ useFactory: () => ({ secret: process.env.JWT_SECRET, signOptions: { expiresIn: '1h', algorithm: 'HS256' } }) }), ThrottlerModule.forRoot([{ ttl: 60000, limit: 100 }])],
-  controllers: [AuthController, UsersController, AdminController, PublicController],
-  providers: [PrismaService, ContentService, VisitorService, MediaService, AdminGuard, { provide: APP_GUARD, useClass: ThrottlerGuard }],
+  controllers: [ChatController, AuthController, UsersController, AdminController, PublicController],
+  providers: [ChatService, PrismaService, ContentService, VisitorService, MediaService, AdminGuard, { provide: APP_GUARD, useClass: ThrottlerGuard }],
 })
 export class AppModule {}
