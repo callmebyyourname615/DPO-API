@@ -3,13 +3,16 @@ import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import helmet from 'helmet';
 import { AppModule } from './app.module';
+import { serveAssets } from './media/assets';
+import type { NestExpressApplication } from '@nestjs/platform-express';
 
 async function bootstrap() {
   const secret = process.env.JWT_SECRET;
   if (!secret || secret.length < 32) throw new Error('JWT_SECRET must contain at least 32 characters');
   if (!process.env.DATABASE_URL) throw new Error('DATABASE_URL is required');
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
   app.use(helmet());
+  serveAssets(app);
   app.setGlobalPrefix('api');
   app.useGlobalPipes(new ValidationPipe({ transform: true, whitelist: true, forbidNonWhitelisted: true }));
   const origins = (process.env.CORS_ORIGINS || '').split(',').map((x) => x.trim()).filter(Boolean);

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "legacy-document-1429",
+    "title": "ດໍາລົດ ວ່າດ້ວຍການປົກປ້ອງເງິນຝາກ ເລກທີ 329.ລບ, ລົງວັນທີ 25.10.2017",
+    "category": "decree",
+    "fileUrl": "/api/assets/dpo/documents/1429.pdf",
+    "fileStatus": "available",
+    "fileType": "pdf",
+    "updatedAt": "2026-11-08T13:20:23.401Z",
+    "documentDate": "2020-06-24T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-document-1433",
+    "title": "DECREE ON DEPOSIT PROTECTION 329",
+    "category": "decree",
+    "fileUrl": "/api/assets/dpo/documents/1433.pdf",
+    "fileStatus": "available",
+    "fileType": "pdf",
+    "updatedAt": "2026-11-08T13:20:23.401Z",
+    "documentDate": "2020-06-24T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-document-2701",
+    "title": "ຂໍ້ຕົກລົງ ວ່າດ້ວຍວົງເງິນປົກປ້ອງ ເລກທີ 1170.ທຫລ, ລົງວັນທີ 28 ພະຈິກ 2023",
+    "category": "agreement",
+    "fileUrl": "/api/assets/dpo/documents/2701.pdf",
+    "fileStatus": "available",
+    "fileType": "pdf",
+    "updatedAt": "2026-11-08T13:20:23.401Z",
+    "documentDate": "2024-01-04T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-document-2108",
+    "title": "Guidance on the implementation of deposit protection activities",
+    "category": "notice",
+    "fileUrl": "/api/assets/dpo/documents/2108.pdf",
+    "fileStatus": "available",
+    "fileType": "pdf",
+    "updatedAt": "2026-11-08T13:20:23.402Z",
+    "documentDate": "2022-06-17T00:00:00.000Z"
+  },
+  {
+    "id": "legacy-document-2161",
+    "title": "ແບບພິມລາຍງານ 3 ແບບ ສະບັບປັບປຸງ 2022",
+    "category": "form",
+    "fileUrl": "/api/assets/dpo/documents/2161.xlsx",
+    "fileStatus": "available",
+    "fileType": "xlsx",
+    "updatedAt": "2026-11-08T13:20:23.404Z",
+    "documentDate": "2022-06-28T00:00:00.000Z"
+  }
+]

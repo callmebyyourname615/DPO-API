@@ -15,7 +15,7 @@ export class PublicController {
   @Post('visitors') @Throttle({ default: { limit: 20, ttl: 60000 } }) recordVisit() { return this.visitors.record(); }
   @Get('media/:id/content') async file(@Param('id') id: string, @Res({ passthrough: true }) response: Response) {
     const { record, stream } = await this.media.content(id);
-    response.set({ 'Content-Type': record.mimeType, 'Content-Length': String(record.size), 'Content-Disposition': record.mimeType.includes('spreadsheetml') ? 'attachment' : 'inline', 'X-Content-Type-Options': 'nosniff' });
+    response.set({ 'Content-Type': record.mimeType, 'Content-Length': String(record.size), 'Content-Disposition': record.mimeType.includes('spreadsheetml') ? 'attachment' : 'inline', 'X-Content-Type-Options': 'nosniff', 'Cross-Origin-Resource-Policy': 'cross-origin' });
     return new StreamableFile(stream);
   }
   @Get('news') news(@Query() q: ListQueryDto) { return this.content.list('news', q, true); }

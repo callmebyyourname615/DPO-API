@@ -7,10 +7,13 @@
     "build": "nest build",
     "start": "node dist/main.js",
     "test": "jest --runInBand",
+    "chat:index": "tsx scripts/index-chat-documents.ts",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate deploy",
     "seed": "tsx prisma/seed.ts",
-    "admin:bootstrap": "tsx prisma/bootstrap-admin.ts"
+    "admin:bootstrap": "tsx prisma/bootstrap-admin.ts",
+    "assets:migrate": "tsx scripts/migrate-assets.ts",
+    "uploads:organize": "tsx scripts/organize-uploads.ts"
   },
   "dependencies": {
     "@nestjs/common": "^11.1.0",

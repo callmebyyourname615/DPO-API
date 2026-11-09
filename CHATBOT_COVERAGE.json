@@ -1,0 +1,328 @@
+{
+  "generatedAt": "2026-11-08T13:56:49.148Z",
+  "ocrEnabled": true,
+  "documents": 32,
+  "pageImages": 2,
+  "records": [
+    {
+      "id": "legacy-document-1429",
+      "type": "pdf",
+      "units": 13,
+      "readable": 13,
+      "ocr": 0,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-1433",
+      "type": "pdf",
+      "units": 21,
+      "readable": 21,
+      "ocr": 0,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-1630",
+      "type": "pdf",
+      "units": 1,
+      "readable": 1,
+      "ocr": 1,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-1631",
+      "type": "pdf",
+      "units": 1,
+      "readable": 1,
+      "ocr": 1,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-1632",
+      "type": "pdf",
+      "units": 1,
+      "readable": 1,
+      "ocr": 1,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-1633",
+      "type": "pdf",
+      "units": 1,
+      "readable": 1,
+      "ocr": 1,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-1649",
+      "type": "pdf",
+      "units": 1,
+      "readable": 1,
+      "ocr": 1,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-1660",
+      "type": "pdf",
+      "units": 4,
+      "readable": 3,
+      "ocr": 3,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-1787",
+      "type": "pdf",
+      "units": 2,
+      "readable": 2,
+      "ocr": 2,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2095",
+      "type": "pdf",
+      "units": 3,
+      "readable": 3,
+      "ocr": 3,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2108",
+      "type": "pdf",
+      "units": 2,
+      "readable": 2,
+      "ocr": 0,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2153",
+      "type": "pdf",
+      "units": 2,
+      "readable": 2,
+      "ocr": 2,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2154",
+      "type": "pdf",
+      "units": 4,
+      "readable": 4,
+      "ocr": 4,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2160",
+      "type": "xlsx",
+      "units": 6,
+      "readable": 6,
+      "ocr": 0,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2161",
+      "type": "xlsx",
+      "units": 5,
+      "readable": 5,
+      "ocr": 0,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2256",
+      "type": "pdf",
+      "units": 5,
+      "readable": 5,
+      "ocr": 5,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2257",
+      "type": "pdf",
+      "units": 18,
+      "readable": 18,
+      "ocr": 18,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2258",
+      "type": "pdf",
+      "units": 5,
+      "readable": 5,
+      "ocr": 5,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2319",
+      "type": "pdf",
+      "units": 1,
+      "readable": 1,
+      "ocr": 1,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2320",
+      "type": "pdf",
+      "units": 1,
+      "readable": 1,
+      "ocr": 1,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2372",
+      "type": "pdf",
+      "units": 2,
+      "readable": 2,
+      "ocr": 2,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2588",
+      "type": "pdf",
+      "units": 21,
+      "readable": 21,
+      "ocr": 21,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2589",
+      "type": "pdf",
+      "units": 6,
+      "readable": 6,
+      "ocr": 6,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2701",
+      "type": "pdf",
+      "units": 1,
+      "readable": 1,
+      "ocr": 1,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2843",
+      "type": "pdf",
+      "units": 28,
+      "readable": 24,
+      "ocr": 24,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-2873",
+      "type": "pdf",
+      "units": 2,
+      "readable": 2,
+      "ocr": 2,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-3064",
+      "type": "pdf",
+      "units": 26,
+      "readable": 18,
+      "ocr": 18,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-3298",
+      "type": "pdf",
+      "units": 12,
+      "readable": 12,
+      "ocr": 12,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-3299",
+      "type": "pdf",
+      "units": 3,
+      "readable": 3,
+      "ocr": 3,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-3373",
+      "type": "pdf",
+      "units": 10,
+      "readable": 10,
+      "ocr": 10,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-3492",
+      "type": "pdf",
+      "units": 23,
+      "readable": 23,
+      "ocr": 23,
+      "status": "indexed"
+    },
+    {
+      "id": "legacy-document-885",
+      "type": "pdf",
+      "units": 2,
+      "readable": 2,
+      "ocr": 2,
+      "status": "indexed"
+    },
+    {
+      "id": "page:cmw6npu0s0000xp7mnjln5u0d",
+      "type": "image",
+      "units": 1,
+      "readable": 0,
+      "ocr": 0,
+      "status": "source-link-only"
+    },
+    {
+      "id": "page:cmw6npu1b0001xp7mdps58xl2",
+      "type": "image",
+      "units": 1,
+      "readable": 1,
+      "ocr": 0,
+      "status": "indexed"
+    },
+    {
+      "id": "page:legacy-page-history",
+      "type": "image",
+      "units": 1,
+      "readable": 0,
+      "ocr": 0,
+      "status": "source-link-only"
+    },
+    {
+      "id": "page:legacy-page-mission",
+      "type": "image",
+      "units": 1,
+      "readable": 0,
+      "ocr": 0,
+      "status": "source-link-only"
+    },
+    {
+      "id": "page:wordpress-page-1005",
+      "type": "image",
+      "units": 1,
+      "readable": 1,
+      "ocr": 1,
+      "status": "indexed"
+    },
+    {
+      "id": "page:wordpress-page-1393",
+      "type": "image",
+      "units": 1,
+      "readable": 0,
+      "ocr": 0,
+      "status": "source-link-only"
+    },
+    {
+      "id": "page:wordpress-page-2535",
+      "type": "image",
+      "units": 1,
+      "readable": 0,
+      "ocr": 0,
+      "status": "source-link-only"
+    },
+    {
+      "id": "page:wordpress-page-9",
+      "type": "image",
+      "units": 1,
+      "readable": 0,
+      "ocr": 0,
+      "status": "source-link-only"
+    }
+  ]
+}

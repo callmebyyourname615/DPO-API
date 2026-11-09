@@ -17,14 +17,21 @@ const TYPES: Record<string, { mime: string; matches: (data: Buffer) => boolean }
 @Injectable()
 export class MediaService {
   constructor(private readonly prisma: PrismaService) {}
-  private directory() { return process.env.MEDIA_DIRECTORY || './uploads'; }
+  private directory() { return join(process.env.MEDIA_DIRECTORY || './uploads', 'media'); }
   private path(id: string) {
     if (!/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id)) throw new NotFoundException();
     return join(this.directory(), id);
   }
   async upload(file?: Upload) {
     if (!file || !file.size || file.size > 20 * 1024 * 1024) throw new BadRequestException('File is required and must be at most 20 MB');
-    const name = basename(file.originalname.replace(/\\/g, '/')).replace(/[\x00-\x1f\x7f]/g, '').slice(-255);
+    let originalName = file.originalname;
+    // Multipart filenames arrive as Latin-1 bytes; recover valid UTF-8 without corrupting decoded names.
+    if (/^[\u0000-\u00ff]*$/.test(originalName)) {
+      const bytes = Buffer.from(originalName, 'latin1');
+      const decoded = bytes.toString('utf8');
+      if (Buffer.from(decoded, 'utf8').equals(bytes)) originalName = decoded;
+    }
+    const name = basename(originalName.replace(/\\/g, '/')).replace(/[\x00-\x1f\x7f]/g, '').slice(-255);
     const ext = name.split('.').pop()?.toLowerCase() || '';
     const type = TYPES[ext];
     if (!type || type.mime !== file.mimetype || !type.matches(file.buffer)) throw new BadRequestException('Unsupported file type or invalid file signature');

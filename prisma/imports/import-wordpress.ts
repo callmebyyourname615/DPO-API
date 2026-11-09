@@ -2,6 +2,7 @@ import 'dotenv/config';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { PrismaClient, type Prisma } from '@prisma/client';
+import { localAsset } from '../asset-urls';
 
 const prisma = new PrismaClient();
 const snapshot = JSON.parse(readFileSync(join(__dirname, 'wordpress-2026-11-07.json'), 'utf8')) as {
@@ -12,9 +13,9 @@ const snapshot = JSON.parse(readFileSync(join(__dirname, 'wordpress-2026-11-07.j
 async function main() {
   const counts = await prisma.$transaction(async (tx) => {
     const posts = snapshot.posts.map(({ sourceId, sourceUrl: _sourceUrl, publishedAt, ...post }) => ({
-      ...post, id: `wordpress-news-${sourceId}`, publishedAt: publishedAt ? new Date(publishedAt as string) : null,
+      ...post, coverImageUrl: localAsset(post.coverImageUrl), gallery: post.gallery.map(url => localAsset(url)!), id: `wordpress-news-${sourceId}`, publishedAt: publishedAt ? new Date(publishedAt as string) : null,
     }));
-    const pages = snapshot.pages.map(({ sourceId, sourceUrl: _sourceUrl, ...page }) => ({ ...page, id: `wordpress-page-${sourceId}` }));
+    const pages = snapshot.pages.map(({ sourceId, sourceUrl: _sourceUrl, ...page }) => ({ ...page, imageUrl: localAsset(page.imageUrl), id: `wordpress-page-${sourceId}` }));
     const addedNews = await tx.news.createMany({ data: posts, skipDuplicates: true });
     const addedPages = await tx.page.createMany({ data: pages, skipDuplicates: true });
     let completedDrafts = 0;

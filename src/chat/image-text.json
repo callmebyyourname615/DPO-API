@@ -1,0 +1,82 @@
+{
+  "page:cmw6npu1b0001xp7mdps58xl2": {
+    "type": "image",
+    "pages": [
+      "Names and abbreviations visibly present in the DPO website member-logo image:\nBCEL, ທຄຕລ, LDB Bank, Agricultural Promotion Bank, JDB, Lao-Viet Bank, ANZ, Bangkok Bank, Krungthai Bank, SCB, Public Bank, Bank of Ayudhya, ACLEDA Bank, Indochina Bank, BIC Bank, Phongsavanh Bank, STB, bfl, MB, Sacombank, VietinBank, ICBC, Maruhan Japan Bank Lao, SHB, Maybank, RHB Bank, LCNB, Bank of China, Vietcombank, Cathay United Bank, First Bank Vientiane Branch, Canadia Bank Lao, KASIKORNTHAI, Taiwan Cooperative Bank, PTK, CMI, SSMI, CMFI\nThis is a transcription of readable logos in the published image, not a complete or current legal membership register. Some logos are not transcribed. Confirm current membership with DPO."
+    ],
+    "methods": [
+      "reviewed"
+    ],
+    "confidence": [
+      100
+    ],
+    "labels": [
+      "Image"
+    ],
+    "fileHash": "36362b56352d473d929fc1a118388281462a4c5d9c7d9617fb8cab35a2a68d30",
+    "sourceHash": "af2328bf88112e1780045330792d5c4d25170effa6deefac0c387c39b160e50d",
+    "names": [
+      "BCEL",
+      "ທຄຕລ",
+      "LDB Bank",
+      "Agricultural Promotion Bank",
+      "JDB",
+      "Lao-Viet Bank",
+      "ANZ",
+      "Bangkok Bank",
+      "Krungthai Bank",
+      "SCB",
+      "Public Bank",
+      "Bank of Ayudhya",
+      "ACLEDA Bank",
+      "Indochina Bank",
+      "BIC Bank",
+      "Phongsavanh Bank",
+      "STB",
+      "bfl",
+      "MB",
+      "Sacombank",
+      "VietinBank",
+      "ICBC",
+      "Maruhan Japan Bank Lao",
+      "SHB",
+      "Maybank",
+      "RHB Bank",
+      "LCNB",
+      "Bank of China",
+      "Vietcombank",
+      "Cathay United Bank",
+      "First Bank Vientiane Branch",
+      "Canadia Bank Lao",
+      "KASIKORNTHAI",
+      "Taiwan Cooperative Bank",
+      "PTK",
+      "CMI",
+      "SSMI",
+      "CMFI"
+    ],
+    "aliases": [
+      "member bank list",
+      "names of member institutions",
+      "ລາຍຊື່ສະມາຊິກ",
+      "ທະນາຄານສະມາຊິກ"
+    ]
+  },
+  "page:wordpress-page-1005": {
+    "type": "image",
+    "pages": [
+      "7 5 ຊລ GL ne\nສະມາຊິກສະພາບໍລິຫານ ກອງທຶນປົກປ້ອງຜູ້ຝາກເງິນແຕ່ປີ 1999 ຫາ ປີ 2003\n\nທ່ານ ນ. ວຽງທອງ ສີພັນດອນ\n\nຈ ທ່ານ ສະແຫວງ ແສງສະຫວ່າງວົງ ທ່ານ ນະ ຈັນຕະລີວົງ ທ່ານ ສົມຫວັງ ນິນທະວົງ ທ່ານ ນ. ພາສີ ພົມມະກອນ"
+    ],
+    "methods": [
+      "ocr"
+    ],
+    "confidence": [
+      83.9
+    ],
+    "labels": [
+      "Image"
+    ],
+    "fileHash": "266ea80558ffd5aba6444bccf829a918e9630080e7663a260bbac3cd050fb8fc",
+    "sourceHash": "2b8130e2811fc3fcbcb08d5e7eb86e8ad0d87a331c84253f1db03367dddb58f1"
+  }
+}

@@ -2,6 +2,7 @@ import 'dotenv/config';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { PrismaClient, DocumentCategory } from '@prisma/client';
+import { localAsset } from './asset-urls';
 
 const prisma = new PrismaClient();
 const data = (file: string): any => JSON.parse(readFileSync(join(__dirname, 'seed-data', `${file}.json`), 'utf8'));
@@ -26,8 +27,8 @@ async function main() {
   await prisma.news.createMany({ data: news.map((n: any, i: number) => ({
     id: `legacy-news-${n.slug}`, title: n.title, slug: n.slug, category: 'news',
     excerpt: excerpts[i] || '', content: i === 0 ? body.join('\n\n') : '',
-    coverImageUrl: assets[`article.${n.slug}.photo-1`]?.source || null,
-    gallery: i === 0 ? [2,3,4,5].map((x) => assets[`article.dporaw.photo-${x}`]?.source).filter(Boolean) : [],
+    coverImageUrl: localAsset(assets[`article.${n.slug}.photo-1`]?.source),
+    gallery: i === 0 ? [2,3,4,5].map((x) => localAsset(assets[`article.dporaw.photo-${x}`]?.source)).filter((url): url is string => Boolean(url)) : [],
     publishedAt: isoDate(n.date), status: i === 0 ? 'published' : 'draft',
   })), skipDuplicates: true });
   await prisma.faq.createMany({ data: data('faq').map((f: any, i: number) => ({
@@ -43,15 +44,15 @@ async function main() {
   ];
   for (const [category, docs] of collections) await prisma.document.createMany({ data: docs.map((d: any) => {
     const type = d.ext === 'xlsx' || d.local?.endsWith('.xlsx') ? 'xlsx' : 'pdf';
-    return { id: `legacy-document-${d.id}`, title: d.title, category, documentDate: isoDate(d.dates?.[0]), fileUrl: d.download || null, fileName: `${d.id}.${type}`, fileType: type, fileSize: fileBytes(d.size), fileStatus: d.download ? 'available' : 'missing', status: 'published' };
+    return { id: `legacy-document-${d.id}`, title: d.title, category, documentDate: isoDate(d.dates?.[0]), fileUrl: localAsset(d.download), fileName: `${d.id}.${type}`, fileType: type, fileSize: fileBytes(d.size), fileStatus: d.download ? 'available' : 'missing', status: 'published' };
   }), skipDuplicates: true });
-  await prisma.partner.createMany({ data: data('partners').map((p: any, i: number) => ({id: `legacy-partner-${p.id}`, name: p.text[0], logoUrl: assets[`connections.partner-${p.id}.logo`]?.source || null, url: p.url, address: p.text.slice(1).join(' · '), order: i, status: 'published'})), skipDuplicates: true });
-  await prisma.banner.createMany({ data: [1,2,3,4,5].map((n) => ({id: `legacy-banner-${n}`, title: `DPO ${n}`, imageUrl: assets[`home.hero-${n}`]?.source || null, order: n, status: 'published'})), skipDuplicates: true });
+  await prisma.partner.createMany({ data: data('partners').map((p: any, i: number) => ({id: `legacy-partner-${p.id}`, name: p.text[0], logoUrl: localAsset(assets[`connections.partner-${p.id}.logo`]?.source), url: p.url, address: p.text.slice(1).join(' · '), order: i, status: 'published'})), skipDuplicates: true });
+  await prisma.banner.createMany({ data: [1,2,3,4,5].map((n) => ({id: `legacy-banner-${n}`, title: `DPO ${n}`, imageUrl: localAsset(assets[`home.hero-${n}`]?.source), order: n, status: 'published'})), skipDuplicates: true });
   const duties = data('duties');
   const history = data('content').history;
   await prisma.page.createMany({ data: [
-    {id:'legacy-page-mission', title:'ພາລະບົດບາດ ແລະ ໜ້າທີ່', slug:'mission', content:[duties.intro,...duties.items].join('\n\n'), imageUrl:assets['institutional.duties.photo-1']?.source || null, status:'published'},
-    {id:'legacy-page-history', title:'ປະຫວັດຄວາມເປັນມາ', slug:'history', content:history.map((v:any)=>v.text).filter(Boolean).join('\n\n'), imageUrl:assets['institutional.history.photo-1']?.source || null, status:'published'},
+    {id:'legacy-page-mission', title:'ພາລະບົດບາດ ແລະ ໜ້າທີ່', slug:'mission', content:[duties.intro,...duties.items].join('\n\n'), imageUrl: localAsset(assets['institutional.duties.photo-1']?.source), status:'published'},
+    {id:'legacy-page-history', title:'ປະຫວັດຄວາມເປັນມາ', slug:'history', content:history.map((v:any)=>v.text).filter(Boolean).join('\n\n'), imageUrl: localAsset(assets['institutional.history.photo-1']?.source), status:'published'},
   ], skipDuplicates:true });
   await prisma.siteSettings.upsert({ where:{id:'main'}, update:{}, create:{id:'main',email:'info@dpo.gov.la',phone:'+85621-330005',address:'ຊັ້ນ 4 ຕຶກສຳນັກງານ ຄະນະກຳມະການຄຸ້ມຄອງຫຼັກຊັບ, ຖະໜົນໄກສອນພົມວິຫານ, ບ້ານໂພນສະອາດ, ເມືອງໄຊເສດຖາ, ນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ.', facebookUrl:'https://www.facebook.com/dpolaos',youtubeUrl:'https://www.youtube.com/@dpolaos',mapEmbedUrl:assets['footer.map']?.src || ''} });
   console.log('Source snapshots imported. Existing records were not updated. FAQ 3 and 12 and incomplete articles are drafts pending review.');
