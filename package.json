@@ -13,19 +13,23 @@
     "seed": "tsx prisma/seed.ts",
     "admin:bootstrap": "tsx prisma/bootstrap-admin.ts",
     "assets:migrate": "tsx scripts/migrate-assets.ts",
-    "uploads:organize": "tsx scripts/organize-uploads.ts"
+    "uploads:organize": "tsx scripts/organize-uploads.ts",
+    "geoip:update": "tsx scripts/update-geoip.ts"
   },
   "dependencies": {
     "@nestjs/common": "^11.1.0",
-    "@nestjs/core": "^11.1.0",
-    "@nestjs/platform-express": "^11.1.0",
     "@nestjs/config": "^4.0.0",
+    "@nestjs/core": "^11.1.0",
     "@nestjs/jwt": "^11.0.0",
+    "@nestjs/platform-express": "^11.1.0",
     "@nestjs/throttler": "^6.4.0",
     "@prisma/client": "6.19.0",
+    "bowser": "^2.15.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.2",
+    "exceljs": "^4.4.0",
     "helmet": "^8.1.0",
+    "maxmind": "^5.0.8",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2"
   },

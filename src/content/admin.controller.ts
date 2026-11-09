@@ -27,6 +27,8 @@ export class AdminController {
   @Delete('home/banners/:id') @Roles('admin','editor') @HttpCode(204) deleteBanner(@Param('id') id: string) { return this.content.remove('banners', id); }
   @Post('media/upload') @Roles('admin','editor') @UseInterceptors(FileInterceptor('file', { limits: { fileSize: 20 * 1024 * 1024, files: 1 } }))
   upload(@UploadedFile() file: any) { return this.media.upload(file); }
+  @Get('media/audio-options')
+  audioOptions() { return this.media.audioOptions(); }
   @Delete('media/:id') @Roles('admin','editor') @HttpCode(204)
   deleteMedia(@Param('id') id: string) { return this.media.remove(id); }
   @Get(':resource/slug-check') slugCheck(@Param('resource') resource: string, @Query() q: SlugQueryDto) {

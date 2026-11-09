@@ -179,3 +179,41 @@ model VisitorDaily {
   date   DateTime @id @db.Date
   visits Int      @default(0)
 }
+
+model VisitorEvent {
+  id          String   @id @db.Uuid
+  visitorHash String   @db.Char(64)
+  sessionId   String   @db.Uuid
+  path        String   @db.VarChar(500)
+  title       String   @db.VarChar(200)
+  country     String   @db.Char(2)
+  device      String   @db.VarChar(16)
+  browser     String   @db.VarChar(32)
+  os          String   @db.VarChar(32)
+  source      String   @db.VarChar(253)
+  occurredAt  DateTime @default(dbgenerated("(CURRENT_TIMESTAMP AT TIME ZONE 'UTC'::text)"))
+  @@index([occurredAt])
+  @@index([country, occurredAt])
+  @@index([device, occurredAt])
+  @@index([path, occurredAt])
+  @@index([sessionId, occurredAt])
+}
+
+model VisitorAnalyticsDay {
+  date     DateTime @id @db.Date
+  views    Int      @default(0)
+  visitors Int      @default(0)
+  sessions Int      @default(0)
+}
+
+model VisitorIdentityDay {
+  date        DateTime @db.Date
+  visitorHash String   @db.Char(64)
+  @@id([date, visitorHash])
+}
+
+model VisitorSessionDay {
+  date      DateTime @db.Date
+  sessionId String   @db.Uuid
+  @@id([date, sessionId])
+}

@@ -25,6 +25,12 @@ folders internally. The organized `/api/assets/images/...`, `/fonts/...`, etc.
 paths also work. Existing database URLs and frontend links stay valid.
 New admin uploads are stored in `media/` and keep their `/api/media/{id}/content` URLs.
 
+Settings can upload MP3, WAV, and OGG sounds (up to 10 MB), preview them, and
+select existing sounds through `GET /api/admin/media/audio-options`. This list
+includes imported files in `assets/audio` and all uploaded audio Media records.
+Changing a footer sound only changes its Settings URL; previous files remain
+available. Uploads referenced by either footer sound field cannot be deleted.
+
 Run `npm run uploads:organize` once to organize an existing storage directory.
 It preserves bytes, rejects conflicting destinations, removes Finder metadata,
 and can be rerun safely. Set `MEDIA_DIRECTORY` to target a different storage root.

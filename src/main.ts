@@ -11,6 +11,8 @@ async function bootstrap() {
   if (!secret || secret.length < 32) throw new Error('JWT_SECRET must contain at least 32 characters');
   if (!process.env.DATABASE_URL) throw new Error('DATABASE_URL is required');
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
+  const proxies = (process.env.TRUSTED_PROXY_CIDRS || '').split(',').map(value=>value.trim()).filter(Boolean);
+  if (proxies.length) app.set('trust proxy',proxies);
   app.use(helmet());
   serveAssets(app);
   app.setGlobalPrefix('api');

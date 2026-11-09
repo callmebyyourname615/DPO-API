@@ -1,7 +1,7 @@
 import { BadRequestException, ConflictException, Injectable, NotFoundException, ServiceUnavailableException } from '@nestjs/common';
 import { randomUUID } from 'node:crypto';
 import { createReadStream } from 'node:fs';
-import { mkdir, unlink, writeFile, access } from 'node:fs/promises';
+import { mkdir, unlink, writeFile, access, readdir } from 'node:fs/promises';
 import { join, basename } from 'node:path';
 import { PrismaService } from '../prisma/prisma.service';
 
@@ -13,6 +13,9 @@ const TYPES: Record<string, { mime: string; matches: (data: Buffer) => boolean }
   webp: { mime: 'image/webp', matches: (b) => b.subarray(0,4).toString() === 'RIFF' && b.subarray(8,12).toString() === 'WEBP' },
   pdf: { mime: 'application/pdf', matches: (b) => b.subarray(0,5).toString() === '%PDF-' },
   xlsx: { mime: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', matches: (b) => b.subarray(0,4).equals(Buffer.from([0x50,0x4b,0x03,0x04])) },
+  mp3: { mime: 'audio/mpeg', matches: (b) => b.subarray(0,3).toString() === 'ID3' || (b.length >= 2 && b[0] === 0xff && (b[1] & 0xe0) === 0xe0 && (b[1] & 0x06) !== 0) },
+  wav: { mime: 'audio/wav', matches: (b) => b.subarray(0,4).toString() === 'RIFF' && b.subarray(8,12).toString() === 'WAVE' },
+  ogg: { mime: 'audio/ogg', matches: (b) => b.subarray(0,4).toString() === 'OggS' },
 };
 @Injectable()
 export class MediaService {
@@ -21,6 +24,20 @@ export class MediaService {
   private path(id: string) {
     if (!/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id)) throw new NotFoundException();
     return join(this.directory(), id);
+  }
+  async audioOptions() {
+    const directory = join(process.env.MEDIA_DIRECTORY || './uploads', 'assets', 'audio');
+    const [entries, uploaded] = await Promise.all([
+      readdir(directory, { withFileTypes: true }).catch((error: NodeJS.ErrnoException) => {
+        if (error.code === 'ENOENT') return [];
+        throw error;
+      }),
+      this.prisma.media.findMany({ where: { mimeType: { startsWith: 'audio/' } }, orderBy: { createdAt: 'desc' }, select: { url: true, fileName: true } }),
+    ]);
+    return [...uploaded, ...entries.filter(entry => entry.isFile() && /\.(mp3|wav|ogg)$/i.test(entry.name)).sort((a,b) => a.name.localeCompare(b.name)).map(entry => ({
+      fileName: entry.name,
+      url: `/api/assets/dpo/${encodeURIComponent(entry.name)}`,
+    }))];
   }
   async upload(file?: Upload) {
     if (!file || !file.size || file.size > 20 * 1024 * 1024) throw new BadRequestException('File is required and must be at most 20 MB');
@@ -34,7 +51,9 @@ export class MediaService {
     const name = basename(originalName.replace(/\\/g, '/')).replace(/[\x00-\x1f\x7f]/g, '').slice(-255);
     const ext = name.split('.').pop()?.toLowerCase() || '';
     const type = TYPES[ext];
-    if (!type || type.mime !== file.mimetype || !type.matches(file.buffer)) throw new BadRequestException('Unsupported file type or invalid file signature');
+    const mime = file.mimetype === 'audio/x-wav' ? 'audio/wav' : file.mimetype;
+    if (!type || type.mime !== mime || !type.matches(file.buffer)) throw new BadRequestException('Unsupported file type or invalid file signature');
+    if (type.mime.startsWith('audio/') && file.size > 10 * 1024 * 1024) throw new BadRequestException('Audio must be at most 10 MB');
     const origin = process.env.PUBLIC_API_ORIGIN;
     let parsed: URL;
     try { parsed = new URL(origin || ''); } catch { throw new ServiceUnavailableException('PUBLIC_API_ORIGIN is not configured'); }
@@ -66,7 +85,7 @@ export class MediaService {
       this.prisma.partner.count({ where: { logoUrl: url } }),
       this.prisma.banner.count({ where: { imageUrl: url } }),
       this.prisma.homeIntro.count({ where: { OR: [{imageUrl: url}, {content: {contains: url}}] } }),
-      this.prisma.siteSettings.count({ where: { footerAudioUrl: url } }),
+      this.prisma.siteSettings.count({ where: { OR: [{ footerAudioUrl: url }, { footerAudioUrl2: url }] } }),
     ]);
     if (references.some(Boolean)) throw new ConflictException('File is referenced by content');
     await this.prisma.media.delete({ where: { id } });
