@@ -83,6 +83,9 @@ describe('visitor analytics PostgreSQL integration in an isolated schema',()=>{
     expect(filtered.current).toEqual({views:1,visitors:1,sessions:1});
     const events=await service.events({from:today,to:today,country:'LA',page:1,limit:20});
     expect(events.total).toBe(3);expect(events.data[0].visitor).toHaveLength(12);
+    const exported=await service.events({from:today,to:today,country:'LA',page:1,limit:20},true);
+    expect(exported.summary).toEqual({views:3,visitors:1,sessions:2});
+    expect(exported.data).toHaveLength(3);
     expect(report.allTimeViews).toBe(4);
     expect(await prisma.visitorAnalyticsDay.findFirst()).toEqual(expect.objectContaining({views:4,visitors:2,sessions:3}));
   });

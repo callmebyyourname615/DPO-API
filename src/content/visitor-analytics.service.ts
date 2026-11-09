@@ -143,11 +143,16 @@ export class VisitorAnalyticsService implements OnModuleInit, OnModuleDestroy {
   async events(query: VisitorReportQueryDto, exporting = false) {
     const {start,end} = reportRange(query);
     const filter = this.filter(query,start,end);
-    const [{ total }] = await this.prisma.$queryRaw<{total:number}[]>(Prisma.sql`SELECT COUNT(*)::int AS total FROM "VisitorEvent" WHERE ${filter}`);
-    const totalPages = Math.max(1,Math.ceil(total/query.limit));
-    const page = Math.min(query.page,totalPages);
-    if (exporting && total > 50000) throw new BadRequestException('Export is limited to 50,000 rows; choose a shorter date range');
-    const data = await this.prisma.$queryRaw<EventRow[]>(Prisma.sql`SELECT id,LEFT("visitorHash",12) AS visitor,path,title,country,device,browser,os,source,"occurredAt" FROM "VisitorEvent" WHERE ${filter} ORDER BY "occurredAt" DESC,id DESC LIMIT ${exporting ? 50000 : query.limit} OFFSET ${exporting ? 0 : (page-1)*query.limit}`);
-    return { data,total,page,totalPages,limit:query.limit };
+    const load = async (db: Prisma.TransactionClient) => {
+      const [totals] = await db.$queryRaw<{views:number;visitors?:number;sessions?:number}[]>(Prisma.sql`SELECT ${exporting ? counts : Prisma.sql`COUNT(*)::int AS views`} FROM "VisitorEvent" WHERE ${filter}`);
+      const total = totals.views;
+      const totalPages = Math.max(1,Math.ceil(total/query.limit));
+      const page = Math.min(query.page,totalPages);
+      if (exporting && total > 50000) throw new BadRequestException('Export is limited to 50,000 rows; choose a shorter date range');
+      const data = await db.$queryRaw<EventRow[]>(Prisma.sql`SELECT id,LEFT("visitorHash",12) AS visitor,path,title,country,device,browser,os,source,"occurredAt" FROM "VisitorEvent" WHERE ${filter} ORDER BY "occurredAt" DESC,id DESC LIMIT ${exporting ? 50000 : query.limit} OFFSET ${exporting ? 0 : (page-1)*query.limit}`);
+      return { data,total,page,totalPages,limit:query.limit,summary:exporting ? {views:total,visitors:totals.visitors!,sessions:totals.sessions!} : undefined };
+    };
+    // Both worksheets use one database snapshot while new visits are arriving.
+    return exporting ? this.prisma.$transaction(load,{isolationLevel:Prisma.TransactionIsolationLevel.RepeatableRead}) : load(this.prisma);
   }
 }

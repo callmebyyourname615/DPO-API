@@ -28,10 +28,12 @@ export class AdminGuard implements CanActivate {
     const match = /^Bearer ([^ ]+)$/.exec(request.headers.authorization || '');
     if (!match) throw new UnauthorizedException();
     let sub: string;
-    try { const payload = await this.jwt.verifyAsync<{ sub: string }>(match[1]); sub = payload.sub; }
+    let version: number;
+    try { const payload = await this.jwt.verifyAsync<{ sub: string; version?: number }>(match[1]); sub = payload.sub; version = payload.version ?? 0; if (!Number.isSafeInteger(version) || version < 0) throw new Error('Invalid token version'); }
     catch { throw new UnauthorizedException(); }
-    const user = await this.prisma.user.findUnique({ where: { id: sub }, select: { id: true, email: true, name: true, role: true, active: true } });
-    if (!user?.active) throw new UnauthorizedException();
+    const record = await this.prisma.user.findUnique({ where: { id: sub }, select: { id: true, email: true, name: true, role: true, active: true, tokenVersion: true } });
+    if (!record?.active || record.tokenVersion !== version) throw new UnauthorizedException();
+    const { tokenVersion: _tokenVersion, ...user } = record;
     const roles = this.reflector.getAllAndOverride<UserRole[]>('roles', [context.getHandler(), context.getClass()]) ?? ['admin', 'editor', 'viewer'];
     if (!roles.includes(user.role)) throw new ForbiddenException();
     request.user = user;

@@ -23,7 +23,7 @@ export class VisitorAnalyticsController {
   events(@Query() query: VisitorReportQueryDto) { return this.analytics.events(query); }
   @Get('export') @Header('Content-Type','application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') @Header('Content-Disposition','attachment; filename="dpo-visitors.xlsx"') @Header('Cache-Control','no-store')
   async export(@Query() query: VisitorReportQueryDto) {
-    const {data} = await this.analytics.events(query,true);
-    return new StreamableFile(await visitorWorkbook(data));
+    const {data,summary} = await this.analytics.events(query,true);
+    return new StreamableFile(await visitorWorkbook(data,summary!));
   }
 }

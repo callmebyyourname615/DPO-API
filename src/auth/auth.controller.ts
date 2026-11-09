@@ -15,7 +15,7 @@ export class AuthController {
   async login(@Body() dto: LoginDto) {
     const user = await this.prisma.user.findUnique({ where: { email: dto.email.trim().toLowerCase() } });
     if (!user || !user.active || !await verifyPassword(dto.password, user.passwordHash)) throw new UnauthorizedException('Invalid credentials');
-    const accessToken = await this.jwt.signAsync({ sub: user.id });
+    const accessToken = await this.jwt.signAsync({ sub: user.id, version: user.tokenVersion });
     return { accessToken, tokenType: 'Bearer', expiresIn: 3600, user: { id: user.id, email: user.email, name: user.name, role: user.role } };
   }
   @Get('me') @UseGuards(AdminGuard)

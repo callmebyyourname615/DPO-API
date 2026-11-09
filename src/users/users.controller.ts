@@ -1,4 +1,4 @@
-import { Body, ConflictException, Controller, Get, NotFoundException, Param, Patch, Post, Req, UseGuards } from '@nestjs/common';
+import { Body, ConflictException, Controller, Delete, ForbiddenException, Get, HttpCode, NotFoundException, Param, Patch, Post, Req, UnauthorizedException, UseGuards } from '@nestjs/common';
 import { Prisma, UserRole } from '@prisma/client';
 import { AdminGuard, hashPassword, Roles } from '../auth/auth.guard';
 import { CreateUserDto, UpdateUserDto } from '../common/dto';
@@ -21,13 +21,30 @@ export class UsersController {
     if (dto.name !== undefined) data.name = dto.name.trim();
     if (dto.role !== undefined) data.role = dto.role as UserRole;
     if (dto.active !== undefined) data.active = dto.active;
-    if (dto.password !== undefined) data.passwordHash = await hashPassword(dto.password);
+    if (dto.password !== undefined) { data.passwordHash = await hashPassword(dto.password); data.tokenVersion = { increment: 1 }; }
     return this.prisma.$transaction(async (tx) => {
       await tx.$executeRaw`SELECT pg_advisory_xact_lock(72517334)`;
+      const actor = await tx.user.findUnique({ where: { id: request.user.id }, select: { active: true, role: true } });
+      if (!actor?.active) throw new UnauthorizedException();
+      if (actor.role !== 'admin') throw new ForbiddenException();
       const user = await tx.user.findUnique({ where: { id } });
       if (!user) throw new NotFoundException('User not found');
       if (user.role === 'admin' && user.active && (dto.active === false || (dto.role && dto.role !== 'admin')) && await tx.user.count({ where: { role: 'admin', active: true } }) <= 1) throw new ConflictException('At least one active admin is required');
       return tx.user.update({ where: { id }, data, select: fields });
+    });
+  }
+  @Delete(':id') @HttpCode(204)
+  async remove(@Param('id') id: string, @Req() request: { user: { id: string } }) {
+    if (id === request.user.id) throw new ConflictException('Cannot delete your own account');
+    await this.prisma.$transaction(async tx => {
+      await tx.$executeRaw`SELECT pg_advisory_xact_lock(72517334)`;
+      const actor = await tx.user.findUnique({ where: { id: request.user.id }, select: { active: true, role: true } });
+      if (!actor?.active) throw new UnauthorizedException();
+      if (actor.role !== 'admin') throw new ForbiddenException();
+      const user = await tx.user.findUnique({ where: { id } });
+      if (!user) throw new NotFoundException('User not found');
+      if (user.role === 'admin' && user.active && await tx.user.count({ where: { role: 'admin', active: true } }) <= 1) throw new ConflictException('At least one active admin is required');
+      await tx.user.delete({ where: { id } });
     });
   }
 }

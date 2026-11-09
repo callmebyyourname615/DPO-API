@@ -13,11 +13,36 @@ interface VisitorWorkbookRow {
   source: string;
 }
 
-export async function visitorWorkbook(rows: VisitorWorkbookRow[]): Promise<Buffer> {
+export async function visitorWorkbook(rows: VisitorWorkbookRow[], totals: {visitors:number;sessions:number;views:number}): Promise<Buffer> {
   const chunks: Buffer[] = [];
   const output = new Writable({ write(chunk, _encoding, callback) { chunks.push(Buffer.from(chunk)); callback(); } });
   const workbook = new stream.xlsx.WorkbookWriter({ stream: output, useStyles: true, useSharedStrings: false });
   workbook.creator = 'DPO';
+  const summary = workbook.addWorksheet('Summary', {
+    views: [{ state: 'frozen', ySplit: 1, showGridLines: false, activeCell: 'B2' }],
+    properties: { defaultRowHeight: 32 },
+  });
+  summary.columns = [{header:'Metric',key:'metric',width:32},{header:'Total',key:'total',width:20}];
+  summary.columns.forEach(column=>{
+    column.font={name:'Noto Sans Lao',size:11,color:{argb:'FF172033'}};
+    column.alignment={vertical:'middle',horizontal:'left',indent:1};
+  });
+  summary.getColumn('total').numFmt='#,##0';
+  summary.getColumn('total').alignment={vertical:'middle',horizontal:'right',indent:1};
+  const summaryHeader=summary.getRow(1);
+  summaryHeader.height=34;
+  summaryHeader.eachCell(cell=>{
+    cell.font={name:'Noto Sans Lao',size:11,bold:true,color:{argb:'FFFFFFFF'}};
+    cell.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FF10218B'}};
+    cell.border={bottom:{style:'thin',color:{argb:'FFDDE3EC'}}};
+  });
+  summaryHeader.commit();
+  for(const [metric,total] of [['Visitors',totals.visitors],['Sessions',totals.sessions],['Page views',totals.views]] as const){
+    const row=summary.addRow({metric,total});
+    if(row.number%2===0)row.eachCell(cell=>{cell.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFF5F7FA'}};});
+    row.commit();
+  }
+  summary.commit();
   const sheet = workbook.addWorksheet('Visitors', {
     views: [{ state: 'frozen', ySplit: 1, showGridLines: false, activeCell: 'A2' }],
     properties: { defaultRowHeight: 30 },
@@ -52,8 +77,13 @@ export async function visitorWorkbook(rows: VisitorWorkbookRow[]): Promise<Buffe
   const countries = new Intl.DisplayNames(['en'], { type: 'region' });
   for (const item of rows) {
     // Excel dates have no timezone; write the same Vientiane wall time as the monitor.
-    const row = sheet.addRow({ ...item, occurredAt: new Date(item.occurredAt.getTime() + 7 * 3600000), country: item.country === 'ZZ' ? 'Unknown' : countries.of(item.country) || item.country, device: item.device === 'unknown' ? 'Unknown' : item.device.charAt(0).toUpperCase() + item.device.slice(1) });
-    row.height = Math.max(30, Math.ceil(Math.max(item.path.length / 40,item.title.length / 50,item.source.length / 28)) * 20 + 10);
+    const values = { ...item, occurredAt: new Date(item.occurredAt.getTime() + 7 * 3600000), country: item.country === 'ZZ' ? 'Unknown' : countries.of(item.country) || item.country, device: item.device === 'unknown' ? 'Unknown' : item.device.charAt(0).toUpperCase() + item.device.slice(1) };
+    const row = sheet.addRow(values);
+    const lines = Math.max(...sheet.columns.map(column => {
+      const value = values[column.key as keyof VisitorWorkbookRow];
+      return typeof value === 'string' ? Math.ceil(value.length / Math.max((column.width || 20) - 4,1)) : 1;
+    }));
+    row.height = Math.max(30,lines * 20 + 10);
     if (row.number % 2 === 0) row.eachCell(cell => { cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFF5F7FA' } }; });
     row.commit();
   }

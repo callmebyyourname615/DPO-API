@@ -88,7 +88,9 @@ Authenticated admin, editor and viewer roles can read these endpoints:
 Filters: `from`, `to` (YYYY-MM-DD, last 90 days), `country` (ISO two-letter code,
 `ZZ` for Unknown), `device`, and exact `path`. Event pagination uses `page` and
 `limit` (10–100). A one-day range has hourly buckets; longer ranges have daily
-buckets. The workbook has one Visitors sheet, a styled header row, frozen headings, filters,
+buckets. The workbook starts with a Summary sheet (distinct Visitors, Sessions and Page views)
+followed by the Visitors detail sheet. Both sheets share one database snapshot
+and the selected filters. It has styled header rows, frozen headings, filters,
 wrapped cells, and local Vientiane date/time values. It contains only column
 headings and records, without subtitles, notes or tips. Export applies the same filters and caps at 50,000 rows; narrow the date
 range when the cap is exceeded.
